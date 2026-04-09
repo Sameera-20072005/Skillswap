@@ -1,0 +1,42 @@
+.dashboard-widget {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.widget-icon-wrap {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-primary   { background: var(--primary-light); color: var(--primary); }
+.icon-secondary { background: var(--secondary-light); color: var(--secondary); }
+.icon-accent    { background: #ede9fe; color: var(--accent); }
+
+.widget-content { flex: 1; }
+
+.widget-value {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 4px;
+  line-height: 1;
+}
+
+.widget-title {
+  font-size: 13px;
+  color: var(--text-light);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.widget-primary   .widget-value { color: var(--primary); }
+.widget-secondary .widget-value { color: var(--secondary); }
+.widget-accent    .widget-value { color: var(--accent); }

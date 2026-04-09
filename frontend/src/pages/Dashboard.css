@@ -1,0 +1,250 @@
+.dashboard {
+  padding: 40px 0;
+  min-height: 100vh;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.dashboard-header h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.dashboard-header p {
+  color: var(--text-light);
+  font-size: 16px;
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.dashboard-section {
+  margin: 32px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.dashboard-section h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--primary);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.section-subtitle {
+  color: var(--text-light);
+  margin-bottom: 24px;
+}
+
+/* Reputation card */
+.reputation-card {
+  text-align: center;
+  padding: 32px;
+}
+
+.reputation-card h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+  color: var(--text);
+}
+
+.reputation-score {
+  font-size: 56px;
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.reputation-stars {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.star { font-size: 24px; color: var(--border); }
+.star.filled { color: #f59e0b; }
+
+.reputation-sub {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+/* Credit progress card */
+.credit-progress-card {
+  padding: 32px;
+}
+
+.credit-progress-card h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.credit-progress-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.credit-current {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.credit-next {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.credit-progress-bar {
+  height: 10px;
+  background: var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.credit-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 10px;
+  transition: width 0.6s ease;
+}
+
+.credit-levels {
+  display: flex;
+  justify-content: space-between;
+}
+
+.credit-levels .level {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.credit-levels .level.active { color: var(--primary); }
+.credit-levels .level.done   { color: var(--secondary); }
+
+/* Skills */
+.skill-tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill-tag-large {
+  background: var(--primary);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.skill-tag-large.secondary { background: var(--secondary); }
+
+/* Quick actions */
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.action-card {
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s;
+}
+
+.action-card:hover { border-color: var(--primary); }
+
+.action-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.action-card h3 { font-size: 18px; margin-bottom: 8px; }
+.action-card p  { color: var(--text-light); font-size: 14px; }
+
+.empty-hint {
+  color: var(--text-light);
+  font-size: 14px;
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--primary);
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.rep-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--primary-light);
+  color: var(--primary);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-size: 20px;
+  color: var(--text-light);
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .dashboard-header h1 { font-size: 24px; }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

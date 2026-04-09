@@ -1,0 +1,17 @@
+.progress-circle {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-circle svg {
+  transform: rotate(0deg);
+}
+
+.progress-text {
+  position: absolute;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--secondary);
+}

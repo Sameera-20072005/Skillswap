@@ -1,0 +1,47 @@
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.skill-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.skill-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+}
+
+.skill-card-header h3 { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+
+.skill-name {
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--primary);
+  letter-spacing: -0.3px;
+}
+
+.skill-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.review-count { color: var(--text-light); font-size: 13px; }
+
+.skill-campus,
+.skill-availability {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.skill-card .btn { width: 100%; margin-top: auto; justify-content: center; }

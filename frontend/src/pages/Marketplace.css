@@ -1,0 +1,107 @@
+.marketplace {
+  padding: 40px 0;
+  min-height: 100vh;
+}
+
+.marketplace-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+}
+
+.marketplace-header h1 { font-size: 32px; font-weight: 800; margin-bottom: 6px; }
+.marketplace-header p  { color: var(--text-light); font-size: 15px; }
+
+.marketplace-stats {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  color: var(--text-light);
+  white-space: nowrap;
+}
+
+.marketplace-stats strong { color: var(--primary); }
+.dot { color: var(--border); }
+
+/* Filters */
+.marketplace-filters {
+  padding: 20px 24px;
+  margin-bottom: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  color: var(--text-light);
+  pointer-events: none;
+}
+
+.search-bar input {
+  padding-left: 42px;
+  padding-right: 40px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.search-clear {
+  position: absolute;
+  right: 12px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-light);
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: auto;
+}
+
+.search-clear:hover { color: var(--text); }
+
+.filter-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-icon { color: var(--text-light); flex-shrink: 0; }
+
+.filter-group select {
+  flex: 1;
+  min-width: 140px;
+  font-size: 14px;
+}
+
+.marketplace-grid { margin-bottom: 40px; }
+
+/* Empty state */
+.no-results {
+  text-align: center;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.no-results-icon { color: var(--text-light); }
+.no-results h3   { font-size: 22px; font-weight: 700; }
+.no-results p    { color: var(--text-light); margin-bottom: 8px; }
+
+@media (max-width: 768px) {
+  .marketplace-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .filter-group       { flex-direction: column; }
+  .filter-group select { width: 100%; }
+}

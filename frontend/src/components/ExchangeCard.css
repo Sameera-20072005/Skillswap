@@ -1,0 +1,147 @@
+.exchange-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exchange-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.exchange-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.exchange-header-info {
+  flex: 1;
+}
+
+.exchange-header-info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.exchange-role {
+  font-size: 12px;
+  color: var(--text-light);
+  font-weight: 500;
+}
+
+.exchange-skills {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--bg);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.skill-exchange {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.skill-exchange .label {
+  font-size: 11px;
+  color: var(--text-light);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.skill-exchange .skill {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.exchange-arrow {
+  font-size: 22px;
+  color: var(--text-light);
+}
+
+.session-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg);
+  border-radius: 8px;
+}
+
+.session-detail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.detail-icon { font-size: 15px; }
+
+.meeting-link {
+  padding: 12px;
+  background: #dbeafe;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.meeting-link strong {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--primary);
+}
+
+.meeting-link a {
+  color: var(--primary);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.meeting-link a:hover { text-decoration: underline; }
+
+.exchange-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.exchange-actions .btn { flex: 1; min-width: 100px; }
+
+.btn-danger-outline {
+  border-color: #ef4444;
+  color: #ef4444;
+}
+
+.btn-danger-outline:hover {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger {
+  background: #ef4444;
+  color: white;
+}
+
+.btn-danger:hover { background: #dc2626; }
+
+.waiting-label {
+  font-size: 13px;
+  color: var(--text-light);
+  font-style: italic;
+  padding: 8px 0;
+}
+
+@media (max-width: 768px) {
+  .exchange-skills { flex-direction: column; }
+  .exchange-arrow  { transform: rotate(90deg); }
+}
