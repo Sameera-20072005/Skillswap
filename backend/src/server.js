@@ -16,7 +16,11 @@ const app = express();
 
 // CORS — allow the React frontend (port 3000) to call this API
 app.use(cors({
-  origin: ['http://localhost:3000', 'http://localhost:5173'],
+  origin: [
+    'http://localhost:3000',
+    'http://localhost:5173',
+    /\.vercel\.app$/
+  ],
   credentials: true
 }));
 
